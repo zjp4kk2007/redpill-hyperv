@@ -1,0 +1,31 @@
+{
+  "mod_version": "v1",
+
+  "files": [
+    {
+      "name": "hyper-v-4.4.180p-broadwellnk.tgz",
+      "url": "https://raw.githubusercontent.com/zjp4kk2007/redpill-hyperv/main/hyper-v/releases/hyper-v-4.4.180p/hyper-v-4.4.180p.tgz",
+      "sha256": "df7bc957694508c2ba66e918a67391fd41379d688abe5699bb62dca7a6296d0d",
+      "packed": true
+    },
+    {
+      "name": "check-hv_netvsc.sh",
+      "url": "https://raw.githubusercontent.com/zjp4kk2007/redpill-hyperv/main/hyper-v/src/check-hv_netvsc.sh",
+      "sha256": "62053d1fa65851812db307c69f2cff39e62408b7e423c5a41433fb79104b0e05",
+      "packed": false
+    }
+  ],
+
+  "kmods": {
+    "hv_vmbus.ko": "",
+    "hv_netvsc.ko": "",
+    "hv_utils.ko": "",
+    "hv_balloon.ko": "",
+    "hyperv-keyboard.ko": ""
+  },
+
+    "scripts": {
+    "on_boot": "check-hv_netvsc.sh"
+  }
+
+}
